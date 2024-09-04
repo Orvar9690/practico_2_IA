@@ -9,7 +9,7 @@ from A_Star import AStar_Ponderado
 if __name__ == "__main__":
     # Crear una instancia de la clase Ciudad
     # Descargamos el grafo de la ciudad especificada
-    mi_ciudad = Ciudad("Buenos Aires, Argentina")
+    mi_ciudad = Ciudad("Chillán, Chile")
     print("Arrancando...")
     mi_ciudad.descargar_grafo()
     print("Grafo descargado....")
@@ -17,11 +17,10 @@ if __name__ == "__main__":
     mi_ciudad.visualizar_grafo()
     print("Visualización lista......")
 
-
     # Elegir nodos de inicio y objetivo
     # Tomamos dos nodos arbitrarios del grafo como punto de partida y destino
     nodo_inicio = list(mi_ciudad.graf().keys())[0]
-    nodo_objetivo = list(mi_ciudad.graf().keys())[20]
+    nodo_objetivo = list(mi_ciudad.graf().keys())[50]
 
     # Ejecutar y medir BFS
     # Realizamos la búsqueda usando BFS Ponderado y medimos el tiempo de ejecución

@@ -25,7 +25,7 @@ class Ciudad:
         ox.plot_graph(
             self.grafo,
             ax=ax,
-            node_size=100000,  # Tamaño de los nodos
+            node_size=5,  # Tamaño de los nodos
             node_color='blue',  # Color de los nodos
             node_edgecolor='none',  # Sin borde en los nodos
             node_zorder=1,  # Los nodos se dibujan debajo de las aristas
