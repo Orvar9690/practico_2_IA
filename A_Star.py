@@ -12,7 +12,7 @@ class AStar_Ponderado:
     def calcular_distancia_euclidiana(self, nodo1, nodo2):
         x1, y1 = self.ciudad.grafo.nodes[nodo1]['x'], self.ciudad.grafo.nodes[nodo1]['y']
         x2, y2 = self.ciudad.grafo.nodes[nodo2]['x'], self.ciudad.grafo.nodes[nodo2]['y']
-        return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+        return abs(x1 - x2) + abs(y1 - y2)
 
     # Implementación del algoritmo A* Ponderado
     def buscar(self, inicio, objetivo):

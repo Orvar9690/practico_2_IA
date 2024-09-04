@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # Elegir nodos de inicio y objetivo
     # Tomamos dos nodos arbitrarios del grafo como punto de partida y destino
     nodo_inicio = list(mi_ciudad.graf().keys())[0]
-    nodo_objetivo = list(mi_ciudad.graf().keys())[100]
+    nodo_objetivo = list(mi_ciudad.graf().keys())[20]
 
     # Ejecutar y medir BFS
     # Realizamos la búsqueda usando BFS Ponderado y medimos el tiempo de ejecución
